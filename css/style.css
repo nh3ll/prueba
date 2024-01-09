@@ -1,0 +1,115 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Roboto+Condensed:ital,wght@0,400;1,900&display=swap');
+
+/* Normalize */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+
+:root{
+    /* Colores */
+    --A: #820000;
+    --B: #B9005B;
+    --C: #FF7C7C;
+    --D: #F3EDC8;
+
+    /* Fuentes  */
+    --titulos: "Inter";
+    --textos: "Roboto Condensed";
+}
+
+@keyframes titulo{
+
+    25%{
+        transform: translate(90px);
+    }
+
+    50%{
+        transform: translate(-90px);
+    }
+
+    75%{
+        transform: scale(1.2);
+    }
+
+    100%{
+        transform: scale(.8);
+    }
+}
+
+/* ------------------- HEADER ------------------- */
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 70px;
+
+    background-color: black;
+}
+
+.titulo{
+    text-align: center;
+    font-family: var(--titulos);
+    color: rgb(255, 255, 255);
+
+    animation-name: titulo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+/* ------------------- BAUL ------------------- */
+
+.baul{
+    width: 90%;
+    height: 600px;
+    margin: 5%;
+
+    background-color: aqua;
+
+    display: flex;
+    flex-wrap: wrap;                       
+
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+
+    gap: 1px;
+
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+
+    font-family: var(--textos);
+    font-size: x-large;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.a{
+    background-color:#820000 ;
+}
+
+.b{
+    background-color:#B9005B ;
+}
+
+.c{
+    background-color:#F3EDC8 ;
+}
+
+.d{
+    background-color:#FF7C7C ;
+}
+
+
+/* Nahuel Tapia */

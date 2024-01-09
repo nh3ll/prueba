@@ -55,8 +55,8 @@
 
 .titulo{
     text-align: center;
-    font-family: var(--titulos);
-    color: rgb(255, 255, 255);
+    font-family: var(--textos);
+    color: aqua;
 
     animation-name: titulo;
     animation-duration: 5s;
